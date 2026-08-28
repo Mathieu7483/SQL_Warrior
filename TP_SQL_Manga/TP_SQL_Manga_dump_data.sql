@@ -1,0 +1,131 @@
+INSERT INTO clients (code_client, titre, prenom, nom, adresse_rue, code_postal, ville, num_telephone, date_naissance, enfants) VALUES
+(1, 'Mme', 'Emma', 'Martin', '12 rue des Érables', '75011', 'Paris', '0611223344', '1990-04-15', 1),
+(2, 'M.', 'Lucas', 'Bernard', '8 avenue Victor Hugo', '69003', 'Lyon', '0622334455', '1985-09-22', 2),
+(3, 'Mme', 'Chloé', 'Petit', '5 place Bellecour', '69002', 'Lyon', '0633445566', '1998-01-10', 0),
+(4, 'M.', 'Hugo', 'Robert', '31 rue Nationale', '59000', 'Lille', '0644556677', '1979-12-02', 3),
+(5, 'Mme', 'Inès', 'Richard', '44 boulevard Gambetta', '31000', 'Toulouse', '0655667788', '1992-06-30', 0),
+(6, 'M.', 'Nathan', 'Durand', '16 rue Sainte-Catherine', '33000', 'Bordeaux', '0666778899', '1988-03-18', 1),
+(7, 'Mme', 'Léa', 'Moreau', '2 rue Masséna', '06000', 'Nice', '0677889900', '2001-11-05', 0),
+(8, 'M.', 'Noah', 'Simon', '19 rue de la République', '13001', 'Marseille', '0688990011', '1995-07-27', 2),
+(9, 'Mme', 'Manon', 'Laurent', '7 quai des Chartrons', '33000', 'Bordeaux', '0699001122', '1982-02-14', 4),
+(10, 'M.', 'Jules', 'Lefebvre', '23 rue Colbert', '44000', 'Nantes', '0601020304', '1999-08-09', 0),
+(11, 'Mme', 'Sarah', 'Michel', '10 rue des Carmes', '45000', 'Orléans', '0612030405', '1991-10-21', 1),
+(12, 'M.', 'Adam', 'Garcia', '6 avenue Jean Jaurès', '34000', 'Montpellier', '0623040506', '1987-05-12', 2);
+
+INSERT INTO types_location (code_type, libelle, coefficient, nb_jours) VALUES
+(1, 'Location courte', 1.0, 2),
+(2, 'Location standard', 1.2, 5),
+(3, 'Location longue', 1.5, 10),
+(4, 'Week-end', 1.1, 3),
+(5, 'Nouveauté', 1.8, 4),
+(6, 'Classique', 0.9, 7),
+(7, 'Pack famille', 1.3, 7),
+(8, 'Découverte', 0.8, 3),
+(9, 'Collector', 2.0, 5),
+(10, 'Étudiant', 0.7, 5),
+(11, 'Premium', 1.6, 7),
+(12, 'Retard régularisé', 2.2, 1);
+
+INSERT INTO mangakas (code_mangaka, prenom, nom, annee_naissance, pays) VALUES
+(1, 'Eiichirō', 'Oda', 1975, 'Japon'),
+(2, 'Masashi', 'Kishimoto', 1974, 'Japon'),
+(3, 'Akira', 'Toriyama', 1955, 'Japon'),
+(4, 'Naoko', 'Takeuchi', 1967, 'Japon'),
+(5, 'Hajime', 'Isayama', 1986, 'Japon'),
+(6, 'Hiromu', 'Arakawa', 1973, 'Japon'),
+(7, 'Rumiko', 'Takahashi', 1957, 'Japon'),
+(8, 'Tite', 'Kubo', 1977, 'Japon'),
+(9, 'Koyoharu', 'Gotōge', 1989, 'Japon'),
+(10, 'Gege', 'Akutami', 1992, 'Japon'),
+(11, 'Tsugumi', 'Ohba', 1962, 'Japon'),
+(12, 'Takeshi', 'Obata', 1969, 'Japon');
+
+INSERT INTO genres_manga (code_genre, signification) VALUES
+(1, 'Shōnen'),
+(2, 'Shōjo'),
+(3, 'Seinen'),
+(4, 'Josei'),
+(5, 'Aventure'),
+(6, 'Fantasy'),
+(7, 'Sport'),
+(8, 'Romance'),
+(9, 'Horreur'),
+(10, 'Science-fiction'),
+(11, 'Comédie'),
+(12, 'Policier');
+
+INSERT INTO mangas (num_manga, titre, prix_base, code_mangaka, code_genre, annee, descriptif, duree) VALUES
+(1, 'One Piece - Tome 1', 2.5, 1, 5, 1997, 'Début de l’aventure de Luffy.', 90),
+(2, 'One Piece - Tome 2', 2.5, 1, 5, 1998, 'Luffy poursuit son équipage.', 90),
+(3, 'Naruto - Tome 1', 2.2, 2, 1, 1999, 'Naruto rêve de devenir Hokage.', 85),
+(4, 'Naruto - Tome 2', 2.2, 2, 1, 2000, 'Premières missions de l’équipe 7.', 85),
+(5, 'Dragon Ball - Tome 1', 2.0, 3, 1, 1984, 'Goku rencontre Bulma.', 80),
+(6, 'Dragon Ball - Tome 2', 2.0, 3, 1, 1985, 'Recherche des Dragon Balls.', 80),
+(7, 'Sailor Moon - Tome 1', 2.1, 4, 2, 1992, 'Usagi découvre ses pouvoirs.', 75),
+(8, 'Sailor Moon - Tome 2', 2.1, 4, 2, 1993, 'Les guerrières se réunissent.', 75),
+(9, 'L’Attaque des Titans - Tome 1', 2.8, 5, 3, 2009, 'Eren découvre la menace des titans.', 95),
+(10, 'L’Attaque des Titans - Tome 2', 2.8, 5, 3, 2010, 'La bataille de Trost commence.', 95),
+(11, 'Fullmetal Alchemist - Tome 1', 2.4, 6, 6, 2001, 'Les frères Elric cherchent la pierre philosophale.', 90),
+(12, 'Fullmetal Alchemist - Tome 2', 2.4, 6, 6, 2002, 'Le voyage des alchimistes continue.', 90),
+(13, 'Ranma 1/2 - Tome 1', 1.9, 7, 11, 1987, 'Ranma subit une étrange malédiction.', 70),
+(14, 'Ranma 1/2 - Tome 2', 1.9, 7, 11, 1988, 'Comédie et arts martiaux.', 70),
+(15, 'Bleach - Tome 1', 2.3, 8, 1, 2001, 'Ichigo devient shinigami.', 85),
+(16, 'Bleach - Tome 2', 2.3, 8, 1, 2002, 'Ichigo apprend à combattre les hollows.', 85),
+(17, 'Demon Slayer - Tome 1', 2.6, 9, 9, 2016, 'Tanjiro cherche à sauver sa sœur.', 90),
+(18, 'Demon Slayer - Tome 2', 2.6, 9, 9, 2017, 'Début de l’entraînement.', 90),
+(19, 'Jujutsu Kaisen - Tome 1', 2.7, 10, 9, 2018, 'Yuji avale un doigt maudit.', 88),
+(20, 'Jujutsu Kaisen - Tome 2', 2.7, 10, 9, 2019, 'Les exorcistes entrent en scène.', 88),
+(21, 'Death Note - Tome 1', 2.5, 11, 12, 2003, 'Light trouve un carnet mortel.', 82),
+(22, 'Death Note - Tome 2', 2.5, 11, 12, 2004, 'L enquête se resserre.', 82),
+(23, 'Bakuman - Tome 1', 2.2, 12, 11, 2008, 'Deux lycéens veulent devenir mangakas.', 78),
+(24, 'Bakuman - Tome 2', 2.2, 12, 11, 2009, 'Le duo travaille sur son premier manga.', 78);
+
+INSERT INTO factures (num_facture, code_client, date_facture) VALUES
+(1, 1, '2026-01-05'),
+(2, 2, '2026-01-07'),
+(3, 3, '2026-01-09'),
+(4, 4, '2026-01-12'),
+(5, 5, '2026-01-15'),
+(6, 6, '2026-01-18'),
+(7, 7, '2026-01-20'),
+(8, 8, '2026-01-22'),
+(9, 9, '2026-01-25'),
+(10, 10, '2026-01-28'),
+(11, 11, '2026-02-02'),
+(12, 12, '2026-02-05'),
+(13, 1, '2026-02-08'),
+(14, 3, '2026-02-10'),
+(15, 6, '2026-02-14'),
+(16, 9, '2026-02-18');
+
+INSERT INTO table_location (num_facture, num_manga, code_type, date_retour) VALUES
+(1, 1, 1, '2026-01-07'),
+(1, 3, 2, '2026-01-11'),
+(2, 5, 4, '2026-01-10'),
+(2, 7, 2, '2026-01-13'),
+(3, 9, 5, '2026-01-14'),
+(3, 11, 3, '2026-01-20'),
+(4, 13, 6, '2026-01-19'),
+(4, 15, 1, '2026-01-14'),
+(5, 17, 5, '2026-01-21'),
+(5, 19, 11, '2026-01-25'),
+(6, 21, 9, '2026-01-24'),
+(6, 23, 10, '2026-01-23'),
+(7, 2, 8, '2026-01-22'),
+(7, 4, 2, '2026-01-26'),
+(8, 6, 6, '2026-01-29'),
+(8, 8, 7, '2026-01-30'),
+(9, 10, 3, '2026-02-04'),
+(9, 12, 11, '2026-02-03'),
+(10, 14, 10, '2026-02-01'),
+(10, 16, 4, '2026-02-02'),
+(11, 18, 5, '2026-02-07'),
+(12, 20, 11, '2026-02-12'),
+(13, 22, 9, '2026-02-15'),
+(14, 24, 8, '2026-02-13'),
+(15, 1, 12, '2026-02-15');
+
+-- Vérifications rapides
+SELECT COUNT(*) AS nb_clients FROM clients;
+SELECT COUNT(*) AS nb_mangas FROM mangas;
+SELECT COUNT(*) AS nb_locations FROM table_location;
