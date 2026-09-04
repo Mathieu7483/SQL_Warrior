@@ -1,0 +1,1 @@
+INSERT INTO utilisateurs(id, nom_complet, email, mot_de_passe) VALUES (1, 'Test', 'test@test.com', '123');
