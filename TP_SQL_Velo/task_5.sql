@@ -1,0 +1,1 @@
+SELECT nom_complet, email FROM utilisateurs
