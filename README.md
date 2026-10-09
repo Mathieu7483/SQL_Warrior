@@ -18,12 +18,12 @@ L'objectif de cette série de projets était de maîtriser la conception, la mod
 ## 🚀 Récapitulatif des Projets
 
 | Projet | Niveau / Thématique | Points Clés & Techniques | Score |
-| --- | --- | --- | --- |
-| **[TP Manga](https://www.google.com/search?q=./TP_SQL_Manga)** | 📚 Amateur / Commerce | `DML`, `JOIN`, Agrégations, Grille tarifaire dynamique, `CASE WHEN` | **99.51%** |
-| **[TP Vélos](https://www.google.com/search?q=./TP_SQL_Velo)** | 🚲 Novice / Mobilité Urbaine | Modélisation ERD, Contraintes d'intégrité, Traçabilité, `TIMESTAMPDIFF` | **97.73%** |
-| **[TP DVD](https://www.google.com/search?q=./TP_SQL_DVD)** | 🎬 Amateur / Vidéoclub | Analyses croisées, Calcul de Chiffre d'Affaires, Filtres multi-tables | **91.12%** |
-| **[TP Assurances](https://www.google.com/search?q=./TP_SQL_Assurance)** | 🚚 Amateur / Flotte Automobile | Programmation procédurale (`UDF`, `STORED PROCEDURES`, `TRIGGERS`) | **75.89%** |
-| **[TP Laboratoire](https://www.google.com/search?q=./TP_SQL_Laboratoire)** | 🧪 Master / LIMS EcoLab | Schéma complexe 15 tables, CTE (`WITH`), `LEFT JOIN`, Vues, `RANK() OVER` | **44.44%** |
+| :--- | :--- | :--- | :---: |
+| **[TP Manga](https://github.com/Mathieu7483/SQL_Warrior/tree/main/TP_SQL_Manga)** | 📚 Amateur / Commerce | `DML`, `JOIN`, Agrégations, Grille tarifaire dynamique, `CASE WHEN` | **99.51%** |
+| **[TP Vélos](https://github.com/Mathieu7483/SQL_Warrior/tree/main/TP_SQL_Velo)** | 🚲 Novice / Mobilité Urbaine | Modélisation ERD, Contraintes d'intégrité, Traçabilité, `TIMESTAMPDIFF` | **97.73%** |
+| **[TP DVD](https://github.com/Mathieu7483/SQL_Warrior/tree/main/TP_SQL_DVD)** | 🎬 Amateur / Vidéoclub | Analyses croisées, Calcul de Chiffre d'Affaires, Filtres multi-tables | **91.12%** |
+| **[TP Assurances](https://github.com/Mathieu7483/SQL_Warrior/tree/main/TP_SQL_Assurance)** | 🚚 Amateur / Flotte Automobile | Programmation procédurale (`UDF`, `STORED PROCEDURES`, `TRIGGERS`) | **75.89%** |
+| **[TP Laboratoire](https://github.com/Mathieu7483/SQL_Warrior/tree/main/sql_laboratoire)** | 🧪 Master / LIMS EcoLab | Schéma complexe 15 tables, CTE (`WITH`), `LEFT JOIN`, Vues, `RANK() OVER` | **%** |
 
 ---
 
